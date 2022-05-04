@@ -87,7 +87,7 @@ SQL
 
 # Create View
 
-resource snowflake_view view {
+resource snowflake_view view1 {
   database = "DEMO_DB"
   schema   = "TestTF"
   name     = "TFTestview"
