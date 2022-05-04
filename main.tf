@@ -60,16 +60,7 @@ resource "snowflake_table" "table" {
     }
   }
 
-  column {
-    name     = "identity"
-    type     = "NUMBER(38,0)"
-    nullable = true
-
-    "identity" {
-      start_num = 1
-      step_num  = 3
-    }
-  }
+  
 
   column {
     name     = "data"
