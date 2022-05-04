@@ -95,5 +95,4 @@ resource snowflake_view view {
   comment = "comment"
 
   statement  = " Select 1 union Selct 2 "
-SQL
 }
