@@ -81,7 +81,7 @@ resource snowflake_view view {
   comment = "comment"
 
   statement  = <<-SQL
-    select * from TFTable;
+    select * from "TFTable";
 SQL
 
 }
