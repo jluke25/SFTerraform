@@ -82,5 +82,6 @@ resource snowflake_view view {
 
   statement  = <<-SQL
     select * from TFTable;
+SQL
 
 }
