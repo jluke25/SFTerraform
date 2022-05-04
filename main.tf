@@ -84,4 +84,16 @@ resource snowflake_view view {
     select * from "TFTable";
 SQL
 
+
+# Create View
+
+resource snowflake_view view {
+  database = "DEMO_DB"
+  schema   = "TestTF"
+  name     = "TFTestview"
+
+  comment = "comment"
+
+  statement  = " Select 1 union Selct 2 "
+SQL
 }
