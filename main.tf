@@ -94,5 +94,5 @@ resource snowflake_view view1 {
 
   comment = "comment"
 
-  statement  = " Select 1 union Selct 2 "
+  statement  = " Select 1 union Select 2 "
 }
