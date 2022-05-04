@@ -74,8 +74,8 @@ resource "snowflake_table" "table" {
 # Create View
 
 resource snowflake_view view {
-  database = "snowflake_schema.schema.database"
-  schema   = "snowflake_schema.schema.name"
+  database = "DEMO_DB"
+  schema   = "TestTF"
   name     = "TFview"
 
   comment = "comment"
