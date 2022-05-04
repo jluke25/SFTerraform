@@ -17,12 +17,12 @@ terraform {
 
 provider "snowflake" {
 }
-
+# Create Database
 resource "snowflake_database" "demo_db" {
   name    = "DEMO_DB"
   comment = "Database for Snowflake Terraform demo"
 }
-
+# Create Schema
 resource "snowflake_schema" "schema" {
   database = "DEMO_DB"
   name     = "TestTF"
@@ -32,3 +32,5 @@ resource "snowflake_schema" "schema" {
   is_managed          = false
   data_retention_days = 1
 }
+
+
