@@ -65,7 +65,7 @@ resource "snowflake_table" "table" {
     type     = "NUMBER(38,0)"
     nullable = true
 
-    identity {
+    "identity" {
       start_num = 1
       step_num  = 3
     }
