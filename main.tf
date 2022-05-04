@@ -4,6 +4,10 @@ terraform {
       source  = "chanzuckerberg/snowflake"
       version = "0.25.17"
     }
+    github = {
+      source  = "integrations/github"
+      version = "~> 4.0"
+    }       
   }
 
   backend "remote" {
