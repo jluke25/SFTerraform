@@ -69,3 +69,18 @@ resource "snowflake_table" "table" {
     comment = "extra data"
   }
 }
+
+
+# Create View
+
+resource snowflake_view view {
+  database = "snowflake_schema.schema.database"
+  schema   = "snowflake_schema.schema.name"
+  name     = "TFview"
+
+  comment = "comment"
+
+  statement  = <<-SQL
+    select * from TFTable;
+
+}
