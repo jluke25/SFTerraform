@@ -30,8 +30,15 @@ jobs:
 
       - name: Terraform state
         id: state
-        run: terraform state rm 'snowflake_schema'
+        run: terraform state rm 'snowflake_schema.schema'
 
+      - name: Terraform state
+        id: state1
+        run: terraform state rm 'snowflake_schema.table'
+
+      - name: Terraform state
+        id: state2
+        run: terraform state rm 'snowflake_schema.view'
 
       - name: Terraform Validate
         id: validate
