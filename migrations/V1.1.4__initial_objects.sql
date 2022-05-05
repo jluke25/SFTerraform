@@ -1,0 +1,6 @@
+//comments
+CREATE TABLE "DEMO_DB"."TestTF"."vFour"
+(
+   FIRST_NAME VARCHAR
+  ,LAST_NAME VARCHAR
+);
