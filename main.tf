@@ -26,6 +26,13 @@ resource "snowflake_database" "demo_db" {
   name    = "DEMO_DB"
   comment = "Database for Snowflake Terraform demo"
 }
+# Create Warehouse 
+resource snowflake_warehouse w {
+  name           = "DEMO_WH"
+  comment        = "foo"
+  warehouse_size = "X-Small"
+}
+
 # Create Schema
 resource "snowflake_schema" "schema" {
   database = "DEMO_DB"
