@@ -30,7 +30,7 @@ jobs:
 
       - name: Terraform state
         id: state
-        run: terraform state rm 'snowflake_schema.schema'
+        run: terraform state list
 
       - name: Terraform state
         id: state1
