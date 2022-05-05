@@ -30,6 +30,10 @@ jobs:
       - name: Terraform Init
         id: init
         run: terraform init
+        
+      - name: Terraform state
+        id: state
+        run: terraform state rm 'snowflake_schema.schema'
 
       - name: Terraform Validate
         id: validate
