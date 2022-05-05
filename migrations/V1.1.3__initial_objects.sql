@@ -1,0 +1,6 @@
+//comments
+CREATE TABLE "DEMO_DB"."TestTF"."TestRerun"
+(
+   FIRST_NAME VARCHAR
+  ,LAST_NAME VARCHAR
+);
