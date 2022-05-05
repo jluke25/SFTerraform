@@ -46,7 +46,6 @@ resource "snowflake_schema" "schema" {
 
 # Create Table
 
-
 resource "snowflake_table" "table" {
   database            = snowflake_schema.schema.database
   schema              = snowflake_schema.schema.name
