@@ -22,9 +22,10 @@ jobs:
      # - name: Terraform Format
      #   id: fmt
      #   run: terraform fmt -check
-     # - name: Terraform state
-     #   id: state
-     #   run: terraform state rm 'snowflake_database.DEMO_DB'
+
+      - name: Terraform state
+        id: state
+        run: terraform state rm 'snowflake_schema.schema'
 
       - name: Terraform Init
         id: init
