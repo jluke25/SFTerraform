@@ -29,6 +29,10 @@ jobs:
         run: terraform init
 
       - name: Terraform state
+        id: state6
+        run: terraform state rm 'snowflake_schema.schema'
+
+      - name: Terraform state
         id: state
         run: terraform state list
 
