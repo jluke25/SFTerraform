@@ -3,9 +3,3 @@ create or replace TABLE "DEMO_DB"."TestTF"."SC_THELLO_WORLD2"
    FIRST_NAME VARCHAR
   ,LAST_NAME VARCHAR
 );
-//comments
-CREATE TABLE "DEMO_DB"."TestTF"."TestRerun"
-(
-   FIRST_NAME VARCHAR
-  ,LAST_NAME VARCHAR
-);
