@@ -38,7 +38,7 @@ jobs:
 
       
       - name: Terraform Destroy
-        id: destroy1
+        id: destroy1 -auto-approve
         run: terraform destroy
 
       - name: Terraform state After Destroy
