@@ -32,10 +32,6 @@ jobs:
         id: state
         run: terraform state list
 
-      - name: Terraform state
-        id: state
-        run: terraform state list
-
       - name: Terraform Validate
         id: validate
         run: terraform validate -no-color
