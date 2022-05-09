@@ -36,9 +36,13 @@ jobs:
         id: validate
         run: terraform validate -no-color
 
-      - name: Terraform Destroy
-        id: destroy1 
-        run: terraform destroy -auto-approve
+      - name: Terraform state
+        id: state6
+        run: terraform state rm 'snowflake_schema.schema'
+
+      - name: Terraform state
+        id: state4
+        run: terraform state rm 'snowflake_view.view1'
 
       - name: Terraform state After Destroy
         id: statedestroy
