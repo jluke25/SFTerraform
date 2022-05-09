@@ -35,15 +35,7 @@ jobs:
       - name: Terraform Validate
         id: validate
         run: terraform validate -no-color
-  
-      - name: Terraform state
-        id: state4
-        run: terraform state rm 'snowflake_view.view1'
 
-      - name: Terraform state After Destroy
-        id: statedestroy
-        run: terraform state list
-
-  #    - name: Terraform Apply
-  #     id: apply
-  #     run: terraform apply -auto-approve
+      - name: Terraform Apply
+        id: apply
+        run: terraform apply -auto-approve

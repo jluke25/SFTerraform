@@ -76,7 +76,6 @@ resource "snowflake_table" "table" {
   }
 }
 
-
 # Create View
 
 resource snowflake_view view {
