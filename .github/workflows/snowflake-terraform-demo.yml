@@ -36,6 +36,37 @@ jobs:
         id: validate
         run: terraform validate -no-color
 
-      - name: Terraform Apply
-        id: apply
-        run: terraform apply -auto-approve
+      - name: Terraform state
+        id: state1
+        run: terraform state rm 'snowflake_database.demo_db'
+
+      - name: Terraform state
+        id: state2
+        run: terraform state rm 'snowflake_table.table'
+
+      - name: Terraform state
+        id: state3
+        run: terraform state rm 'snowflake_view.view'
+
+      - name: Terraform state
+        id: state4
+        run: terraform state rm 'snowflake_view.view1'
+
+      - name: Terraform state
+        id: state5
+        run: terraform state rm 'snowflake_warehouse.w'
+
+      - name: Terraform state
+        id: state6
+        run: terraform state rm 'snowflake_schema.schema'
+
+      - name: Terraform Destroy
+        id: destroy1 
+        run: terraform destroy -auto-approve
+
+      - name: Terraform state After Destroy
+        id: statedestroy
+        run: terraform state list
+   #   - name: Terraform Apply
+   #     id: apply
+   #     run: terraform apply -auto-approve
